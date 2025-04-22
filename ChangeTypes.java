@@ -26,6 +26,13 @@ public class ChangeTypes {
         double l= Double.parseDouble(j)+ t;
         System.out.println(l);
 
+        //string to  number
+
+        String h="22";
+        int sc=Integer.parseInt(h);
+        System.out.println("The Number is " +sc);
+
+
         
     }
 }
