@@ -1,7 +1,7 @@
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.time.format.DateTimeFormatterBuilder;
+import java.util.Calendar;
 import java.util.Date;
 
 public class Dateu {
@@ -15,7 +15,7 @@ public class Dateu {
 
         //Foramting the date
         String dateformat=format.format(date);
-        System.out.println("Currente date: " + dateformat);
+        System.out.println("Current date: " + dateformat);
 
         //Using Date time formater
         //Create a DateTimeFormater with the desire pattern
@@ -26,6 +26,16 @@ public class Dateu {
 
         String currentDate=date2.format(formating);
         System.out.println(currentDate);
+
+        //Calendar
+        Calendar calendar=Calendar.getInstance();
+        calendar.set(2025 ,3, 24);
+        Date date3=calendar.getTime();
+        System.out.println(date3);
+
+        
+
+
 
     }
 }
