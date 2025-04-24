@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Califications {
     public static void main(String[] args) {
         double []mathClas,phisicClas,languajeClas;
-        int sumMath=0,sumPhisic=0,sumLanguaje=0;
+        double sumMath=0,sumPhisic=0,sumLanguaje=0;
         
         
 
