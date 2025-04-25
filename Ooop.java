@@ -21,10 +21,9 @@ public class Ooop {
 
         Auto auto = new Auto(model, color, brand, price, cylinder);
 
-        System.out.println("\n--- Car Details ---");
-        System.out.println(auto.detail());
+        System.out.println(auto.toString());
+        System.out.println(Auto.referenceColor);
 
-        System.out.println("\nThrottle/Brakes Simulation:");
-        System.out.println(auto.throttleBrakes(3000));
+
     }
 }

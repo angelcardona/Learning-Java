@@ -6,6 +6,7 @@ public class Auto {
     private String price;
     private int capacityTank = 40;
     private String brand;
+    static String referenceColor="red";
 
     // Constructor vacío
     public Auto() {
@@ -84,5 +85,11 @@ public class Auto {
 
     public float calculateIntake(int km, float percentGas) {
         return km / (capacityTank * percentGas);
+    }
+
+    @Override
+    public String toString() {
+        return "---Car details--\nmodel=" + model + ", color=" + color + ", cylinder=" + cylinder + ", price=" + price
+                + ", capacityTank=" + capacityTank + ", brand=" + brand + "";
     }
 }
